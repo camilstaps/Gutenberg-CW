@@ -11,7 +11,7 @@ LANGS="en fr fi de nl it es pt el sv hu la da pl"
 FILESPERLANG=10
 LINECOUNT=500
 
-WPMS="14 16 18 20 22"  # Character speeds
+WPMS="14 16 18 20 22 24" # Character speeds
 EWPMS="9 10 11 12 13 14 15 16" # Effective speeds
 FREQ=700               # Tone frequency
 DURATION=240           # Number of seconds (finishes sentence)
