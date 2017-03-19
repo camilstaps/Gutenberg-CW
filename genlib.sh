@@ -14,7 +14,7 @@ LINECOUNT=200
 WPMS="14 16 18 20 22"  # Character speeds
 EWPMS="9 10 11 12 13 14 15 16" # Effective speeds
 FREQ=700               # Tone frequency
-DURATION=180           # Number of seconds (finishes sentence)
+DURATION=240           # Number of seconds (finishes sentence)
 AUTHOR="Camil PD7LOL"  # MP3 author
 TITLE="Random CW text" # MP3 title
 ALBUM="Random CW text" # MP3 album title (WPM is appended)
@@ -40,7 +40,7 @@ fi
 for WPM in $WPMS; do
 	for EWPM in $EWPMS; do
 		rm -f "$LIB/all.txt"
-		cat "$LIB/"*.txt | shuf -n $LINECOUNT > "$LIB/all.txt"
+		cat "$LIB/"*.txt | grep -v '^[[:space:]]*$' | shuf -n $LINECOUNT > "$LIB/all.txt"
 		
 		RDEST="$DEST-$WPM-$EWPM"
 		rm -rf "$RDEST"
