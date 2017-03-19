@@ -9,6 +9,14 @@ This is a shell script which
 This is useful for training CW on semi-random text: parts of sentences make
 sense, but language changes continuously and within sentences.
 
+## Just give me the MP3s
+
+Plenty of material on different speeds is available at
+https://github.com/camilstaps/Gutenberg-CW/releases.
+[Let me know](mailto:info@camilstaps.nl) if you need more, different settings
+or so, and are unable to generate the files yourself - I will upload some more
+then.
+
 ## Usage
 
 For the first time, use:
