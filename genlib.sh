@@ -9,7 +9,7 @@ DEST=mp3
 
 LANGS="en fr fi de nl it es pt el sv hu la da pl"
 FILESPERLANG=10
-LINECOUNT=200
+LINECOUNT=500
 
 WPMS="14 16 18 20 22"  # Character speeds
 EWPMS="9 10 11 12 13 14 15 16" # Effective speeds
