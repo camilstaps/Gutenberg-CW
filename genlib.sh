@@ -47,7 +47,10 @@ for WPM in $WPMS; do
 		mkdir -p "$RDEST"
 		ebook2cw -w $WPM -e $EWPM -f $FREQ -d $DURATION -u \
 			-a "$AUTHOR" -t "$TITLE" -o "$RDEST/$FILENAME"\
-			"$LIB/all.txt"
+			"$LIB/all.txt" || exit -1
 		id3v2 -A "$ALBUM ($WPM/$EWPM wpm)" "$RDEST/"*.mp3
+
+		tar czf "$RDEST.tar.gz" "$RDEST"
+		rm -r "$RDEST"
 	done
 done
